@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     background-color: aqua;
-    background-image: url(./image\ \(1\).png);
+    background-image: url(./bg-image.png);
     background-size: 100% 100%;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
 }
 .box:hover{
     transform: scale(1.008);
-    transition: all ease 1s;
+    transition: all ease .5s;
 }
 
 form div h2 {
@@ -56,6 +56,11 @@ form :nth-child(2) input {
     margin-bottom: 13px;
     border: none;
     box-shadow: 1px 1px 6px -3px #d080dd;
+}
+
+form :nth-child(2) input:focus{
+    border: none;
+    outline-color: #a336b5;
 }
 
 form :nth-child(3) input {
@@ -73,7 +78,7 @@ form :nth-child(3) input {
 
 form :nth-child(3) input:hover {
     transform: scale(1.03);
-    transition: all 2ms;
+    transition: all ease .5s;
 }
 
 .box .logo img {
@@ -87,4 +92,7 @@ form :nth-child(3) input:hover {
     margin-top: 35px;
     text-decoration: none;
     color: rgb(63, 57, 57);
+}
+.box a:hover{
+    color: #a14d81;
 }
